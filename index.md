@@ -13,6 +13,6 @@ is has a few links to :
 -  a [frama](frama.htm) page and
 -  a [landing](landing.htm) one.
 -  a [newsletter](newsletter.htm),
--  the other [index.htm](index.htm) file.
+-  the other [index.htm](./index.htm) file.
 
 {% include sig.html %}
