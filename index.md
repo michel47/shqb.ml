@@ -15,6 +15,7 @@ is has a few links to :
 -  a [frama](frama.htm) page and
 -  a [landing](landing.htm) one.
 -  a [newsletter](newsletter.htm),
+-  a few [links](links.html),
 -  the other [home.htm]({{site.baseurl}}/home.htm) file.
 
 {% include sig.html %}
