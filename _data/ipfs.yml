@@ -1,3 +1,8 @@
---- # Yaml file for ipfs
-pgw: http://cloudflare-ipfs.com
-qm: QmXYZ
+--- # YAML data for shqb.ml on IPFS
+date: 08/25/19
+gitid: 1ea9638
+qm: zdj7WVxdBax9iPCxZJjVAk2DJa7SzX6yEYdJkq9cfo7pkPtH4
+bafy: bafybeiah34eb5dk2zzm6t7sklaqzda2mkbn2w7qbwjyonhgjohq2i34xz4
+webroot: bafybeifurphmqahac47f75om6lmw7jxdsc6vfsdotn53ovgrgj7vllyqsu
+www: bafybeid7dszz436opofb6eytgc4ozwfasi3zjraytcrki7oey7pnhnddp4
+pgw: https://gateway.ipfs.io
