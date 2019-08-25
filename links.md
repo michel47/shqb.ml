@@ -7,7 +7,7 @@ title: hosting links
 * <{{site.url}}>
 * <https://modest-pare-29d464.netlify.com/>
 * <https://shqb.ml/home.htm>
-* <{{site.data.ipfs.pgw}}/ipfs/{{site.data.ipfs.webroot}}/shqb.ml/home.htm>
-* <https://{{site.data.ipfs.bafy}}.cf-ipfs.com/>
+* <{{site.data.ipfs.pgw}}/ipfs/{{site.data.ipfs.wr58}}/shqb.ml/home.htm>
+* <https://{{site.data.ipfs.webroot}}.cf-ipfs.com/>
 * <http://{{site.data.ipfs.bafy}}.ipfs.dweb.link/>
 

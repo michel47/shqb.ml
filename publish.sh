@@ -1,7 +1,72 @@
 #
 
+set -e
+
+domain=shqb.ml
 find . -name "*.org" -type f -delete
 jekyll build
-qm=$(ipfs add -Q -r _site --cidbase=base58btc)
-ww32=$(ipfs cid base32 $qm)
-echo http://$ww32.cf-ipfs.com/
+echo .
+qm=$(ipfs add -Q -r _site --cid-version=0 --cid-base=base58btc)
+bafy=$(ipfs cid base32 $qm)
+echo url: http://$bafy.ipfs.dweb.link/
+echo url: https://$bafy.cf-ipfs.com/
+if ipfs files stat /root/www/web/$domain 1>/dev/null; then
+ipfs files rm -r /root/www/web/$domain
+fi
+ipfs files cp /ipfs/$qm /root/www/web/$domain
+webroot=$(ipfs files stat /root/www/web --hash)
+wr58=$(echo $webroot | mbase -d | xyml b58)
+www=$(ipfs files stat /root/www --hash)
+echo url: https://cloudflate-ipfs.com/ipfs/$webroot/$domain
+
+date=$(date +%D);
+gitid=$(git rev-parse --short HEAD)
+eval $(echo $qm | $HOME/bin/name | tee _data/name.yml | eyml)
+eval $($HOME/bin/version _site/index.html | eyml)
+cat <<EOF > _data/ipfs.yml
+--- # YAML data for $domain on IPFS
+release: $scheduled
+date: $date
+user: $user
+parent: $gitid
+qm: $qm
+bafy: $bafy
+webroot: $webroot
+wr58: $wr58
+www: $www
+pgw: https://gateway.ipfs.io
+EOF
+ver=$scheduled
+
+jekyll build 1>/dev/null
+git add _data/ipfs.yml links.md
+msg="publishing on $date $version"
+if git commit -m "$ver: $msg"; then
+gitid=$(git rev-parse HEAD)
+git tag -f -a $ver -m "tagging $gitid on $date"
+echo $tic: $gitid >> revs.log
+date=$(date +%D);
+tic=$(date +%s)
+cat <<EOF > _data/VERSION.yml
+date: $date
+tic: $tic
+version: $version
+gitid: $gitid
+rel: $ver
+EOF
+jekyll build 1>/dev/null
+
+# test if tag $ver exist ...
+if git ls-remote --tags | grep "$ver"; then
+git push --delete origin "$ver"
+fi
+fi
+echo "git push : "
+git push --follow-tags
+echo .
+echo url: https://github.com/michel47/$domain/releases/
+
+
+
+
+

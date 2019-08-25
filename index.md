@@ -4,7 +4,7 @@ title: Index page
 layout: default
 ---
 
-<meta http-equiv="refresh" content="5,URL={{site.baseurl}}/home.htm"/>
+<meta http-equiv="refresh" content="5;URL=home.htm"/>
 
 # {{page.title}} 
 
@@ -16,6 +16,6 @@ is has a few links to :
 -  a [landing](landing.htm) one.
 -  a [newsletter](newsletter.htm),
 -  a few [links](links.html),
--  the other [home.htm]({{site.baseurl}}/home.htm) file.
+-  the other [home.htm]({{site.url}}{{site.baseurl}}/home.htm) file.
 
 {% include sig.html %}

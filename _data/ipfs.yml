@@ -1,8 +1,11 @@
 --- # YAML data for shqb.ml on IPFS
+release: v1.3.6
 date: 08/25/19
-gitid: 1ea9638
-qm: zdj7WVxdBax9iPCxZJjVAk2DJa7SzX6yEYdJkq9cfo7pkPtH4
-bafy: bafybeiah34eb5dk2zzm6t7sklaqzda2mkbn2w7qbwjyonhgjohq2i34xz4
-webroot: bafybeifurphmqahac47f75om6lmw7jxdsc6vfsdotn53ovgrgj7vllyqsu
-www: bafybeid7dszz436opofb6eytgc4ozwfasi3zjraytcrki7oey7pnhnddp4
+user: amilius
+parent: 737d1be
+qm: zdj7WcjH2W3yJ7PtydvU5D9dW313nB13ZwActmMSxaZNdhxL5
+bafy: bafybeidmov7z4vjfac2huacc5dvj6atpcxfwyzwit7s6qnbmtvbbtehnfy
+webroot: bafybeigl74gvos3stkndglxt6zjt3o25z7hzbrm2kfxjnqt4vns4vhwpju
+wr58: zdj7WjADQo9PPX5vVG7HSqe4G9o89ALmVy19mwnaRDbSqVHek
+www: bafybeif34kuba4ngugitlexbly375o7gu4o2n6luobvyckld4pjfi5dji4
 pgw: https://gateway.ipfs.io
