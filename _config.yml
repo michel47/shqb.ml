@@ -5,7 +5,7 @@ output: _dist
 title: Mini Jekyll
 description: The smallest Jekyll website !
 email: michelc@gc-bank.org
-baseurl: "shqb.ml"
+baseurl: ""
 url: "//jekyll.tk" # the base hostname & protocol for your site
 url: "https://michel47.github.io"
 netname: modest-pare-29d464
