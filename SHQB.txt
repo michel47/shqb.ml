@@ -1,0 +1,90 @@
+---
+title: Self Health Quantification *block*Ring™ 
+---
+
+### Introduction
+
+The [blockchain][1] is an incorruptible digital ledger that can be used to
+record anything. It permits digital information to be distributed without
+a centralized server. Secure data-blocks are bound by cryptographic
+principles (chain). Cryptocurrency is the first blockchain use; however,
+its potential extends far beyond. Block chain technology may offer
+a reliable, consistent solution to catalogue and share research and
+personal health data.
+
+
+### Self-health quantification *block*Ring™ ([SHQB][2]) is providing you 
+
+#### Personal health record
+
+The [SHQB][2] provides a consistent, private, reliable location for your data
+you can access easily using a variety of applications. Information will
+never be too old or impossible to access and it stays with you for life.
+
+You can approve medical provider access to your information, which is
+easily downloadable and augmented by any practitioner.
+
+Allows you to collect data on symptoms and responses to medications,
+nutritional therapies, and other lifestyle modifications. Graphs provide
+easy to read information on trends and changes over time; including
+a timeline chart that shows how events in your life correspond with
+changes in your health.
+
+Recording what you think is significant empowers you to view a visual
+representation of your health data. With this information, you may
+choose to make personal changes to benefit your health resilience. You
+also empower your health care practitioners to help you through access
+to pre-analyzed historical health data.
+
+#### Research data provision
+
+Consistency in data collection and categorization allows you to
+participate in retrospective and prospective research programs.
+Crypto-tokenization can be used for incentivization.
+
+### Technical Details 
+
+Our [blockRing™][3] technology as opposed to more classic blockchain approach
+doesn't require a large network to be operational,
+In fact a minimum of two nodes are required for the system to work.
+
+Moreover it requires no centralized server and therefore can scale globally
+establishing a global [EHR-system][4] available for both the researchers
+and the medical staff available anywhere beyond borders,
+while suppressing the risk of data breaches.
+
+##### De-identification : Not anonymous yet private 
+
+User privacy is protected at all time with the use of asymmetric cryptography
+([one-time-identity][5] tokenization).
+Only the owner of the data has the keys to grant access
+to the data to certified personal and registered organizations.
+
+###### This technology gives the control of personal data back to the user
+
+Read more : [abstract](abstract.html)
+
+### Conclusion
+
+The [SHQB][2] integrates fundamental blockchain concepts with decentralization,
+asymmetric cryptography and [de-identification][6] to create an [easy to understand][7]
+technology.
+
+The [SHQB][2] holds the potential to improve access to and
+quality of research data collection, as well as, medical, nutrition and
+lifestyle care,
+
+It empowers patients, researchers, and providers to work together toward
+the development of individualized care, with a secure permanent data
+record available across organizations and borders while mitigating the
+risk of breaches.
+
+[1]: {{DUCK}}=!g+blockchain+wikipedia
+[2]: {{DUCK}}=!g+%23SHQB+Self+Health+Quantification+Blockchain
+[3]: {{DUCK}}=!g+%22BlockRing™%22
+[4]: {{DUCK}}=!g+%22Global+EHR+system%22+%23GEHR
+[5]: {{DUCK}}=!g+one-time-identity+site:ydentity.ml
+[6]: {{DUCK}}=!g+de-identification+%22blockRing™%22
+[7]: {{DUCK}}=!g+easy-understand+%22blockRing™%22+technology
+
+{% include sig.html %}

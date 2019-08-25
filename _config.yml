@@ -1,0 +1,18 @@
+# Site settings
+# vim: nospell
+port: 4000
+output: _dist
+title: Mini Jekyll
+description: The smallest Jekyll website !
+email: michelc@gc-bank.org
+baseurl: ""
+url: "//jekyll.tk" # the base hostname & protocol for your site
+googledocid: 1VfERUZ8oTEGlCT3Xn37yK1TOsYxFZuJryNNR7bhJdUM
+framaid: mini_jekyll
+
+exclude:
+ - .org
+ - _site
+ - Gemfile
+ - Gemfile.lock
+ - travis.sh

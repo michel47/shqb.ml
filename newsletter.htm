@@ -1,0 +1,29 @@
+---
+docid: 1ysYaEAea1oVX9C-8_TydjDCOq0jor4erjQ4VZ217tyA
+---
+<!DOCTYPE html><html><head>
+<title>{{ page.title }}</title>
+<!-- see also: https://bafybeifen7js46vlfa7aqibwie6xlrkxjsn3kadhjpcwmkpdwsdja773s4.cf-ipfs.com/index.htm -->
+<meta http-equiv="Origin" content="{{ site.url }}"/>
+<meta charset="utf8">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iglake/cssjs@v1.3.5/css/style.css" type="text/css" media="all">
+<link href="style.css" rel="stylesheet" type="text/css" media="all">
+</head><body>
+<div class="content md" data-gdid="{{ page.docid }}" onClick="edit(this)">
+<!-- write your page here in markdown format -->
+<!-- end of page -->
+</div>
+<br>source <a href="https://docs.google.com/document/export?id={{ page.docid }}&format=txt">file</a> made w/ <a href="https://docs.google.com/document/d/{{ page.docid }}/edit" target=_blank class=gdoc>♡</a>.
+<!--
+<script src=https://cdn.jsdelivr.net/gh/iglake/js@master/dist/inc-gd.js></script>
+<script src=http://iphs.ga/js/inc-gd.js></script>
+<script src=http://127.0.0.1:8088/js/inc-gd.js></script>
+-->
+<script src=https://cdn.jsdelivr.net/gh/iglake/js@5506bff/dist/inc-gd.js></script>
+
+<div class="content" style="margin-top: 108px;">
+<h3>web-rings: <input type=button value="list" name=list Onclick="toggle('list')"/></h3>
+<div id=list style="display:none">
+{% include list.html %}
+</div>
+</div>
