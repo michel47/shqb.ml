@@ -16,6 +16,6 @@ is has a few links to :
 -  a [landing](landing.htm) one.
 -  a [newsletter](newsletter.htm),
 -  a few [links](links.html),
--  the other [home.htm]({{site.url}}{{site.baseurl}}/home.htm) file.
+-  the other [home.htm](home.htm) file.
 
 {% include sig.html %}

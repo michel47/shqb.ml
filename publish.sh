@@ -44,10 +44,11 @@ msg="publishing on $date $version"
 if git commit -m "$ver: $msg"; then
 gitid=$(git rev-parse HEAD)
 git tag -f -a $ver -m "tagging $gitid on $date"
-echo $tic: $gitid >> revs.log
+echo $tic: $gitid >> _data/revs.log
 date=$(date +%D);
 tic=$(date +%s)
 cat <<EOF > _data/VERSION.yml
+--- # (previous) site VERSION
 date: $date
 tic: $tic
 version: $version

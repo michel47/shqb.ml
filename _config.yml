@@ -12,6 +12,7 @@ netname: modest-pare-29d464
 url: "https://modest-pare-29d464.netlify.net"
 googledocid: 1VfERUZ8oTEGlCT3Xn37yK1TOsYxFZuJryNNR7bhJdUM
 framaid: mini_jekyll
+gtag: UA-146588632-1
 
 exclude:
  - publish.sh
