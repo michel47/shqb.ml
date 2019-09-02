@@ -63,7 +63,10 @@ to the data to certified personal and registered organizations.
 ###### This technology gives the control of personal data back to the user
 
 Read more : [abstract](abstract.html)
-See more : [poster](poster2.html)
+
+[![poster2](assets/poster2.jpg)](poster2.htm)
+
+See more : [poster](poster2.htm)
 
 ### Conclusion
 
