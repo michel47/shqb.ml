@@ -64,9 +64,9 @@ to the data to certified personal and registered organizations.
 
 Read more : [abstract](abstract.html)
 
-[![poster2](assets/poster2.jpg)](poster2.htm)
+[![poster2][jpg]](poster2.htm)
 
-See more : [poster](poster2.htm)
+See more : [poster](poster2.htm) ([pdf])
 
 ### Conclusion
 
@@ -83,6 +83,8 @@ the development of individualized care, with a secure permanent data
 record available across organizations and borders while mitigating the
 risk of breaches.
 
+[pdf]: https://ipns.co/QmXDSXrM1oW9JFmJKh1fQTC9rFruRUZt865PzuNu7DiD6o/SHQB_poster_final.pdf
+[jpg]: https://cdn.statically.io/img/shqb.ml/assets/poster2.jpg
 [1]: {{DUCK}}=!g+blockchain+wikipedia
 [2]: {{DUCK}}=!g+%23SHQB+Self+Health+Quantification+Blockchain
 [3]: {{DUCK}}=!g+%22BlockRing™%22
