@@ -10,14 +10,14 @@ Michel's page [hCard](http://127.0.0.1:8080/ipns/{{site.data.hcard.mkey}})
 
 ### explorer (webui.ipfs.io)
 
-- [/my/profile/hcard/qm.log](https://webui.ipfs.io/#/files/my/profile/hcard/qm.log)
+- [/my/profile/hcard/qm.yml](https://webui.ipfs.io/#/files/my/profile/hcard/qm.yml)
 - [/my/profile/hcard](http://webui.ipfs.io/#/files/my/profile/hcard)
 - [/explore/{{page.qm}}](http://webui.ipfs.io/#/explore/{{page.qm}})
 
 ### local (127.0.0.1)
 
 - [hCard.htm](http://127.0.0.1:5001/webui/#/files/preview/my/profile/hcard/hCard.htm) ([{{page.qm}}](http://gateway.ipfs.io/ipfs/{{page.qm}}/hCard.htm))
-- [qm.log](http://127.0.0.1:5001/webui/#/files/preview/my/profile/hcard/qm.log)
+- [qm.yml](http://127.0.0.1:5001/webui/#/files/preview/my/profile/hcard/qm.yml)
 - [/my/profile/hcard](http://127.0.0.1:5001/webui/#/files/explorer/my/profile/hcard)
 
 ---

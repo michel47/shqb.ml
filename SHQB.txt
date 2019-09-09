@@ -2,9 +2,14 @@
 title: Self Health Quantification *block*Ring™ 
 ---
 
+M. Combes PhD<sup>[1]</sup> and C.F. Draper MS RD PhD<sup>[2]</sup>
+<br>[1] Blockchain consultant and CEO GC-Bank, Switzerland
+<br>[2] Research Consultant, Personal projects, Switzerland
+<br>[m.combes@gc-bank.org](mailto:m.combes@gc-bank.org)
+
 ### Introduction
 
-The [blockchain][1] is an incorruptible digital ledger that can be used to
+The [blockchain][bc] is an incorruptible digital ledger that can be used to
 record anything. It permits digital information to be distributed without
 a centralized server. Secure data-blocks are bound by cryptographic
 principles (chain). Cryptocurrency is the first blockchain use; however,
@@ -13,11 +18,11 @@ a reliable, consistent solution to catalogue and share research and
 personal health data.
 
 
-### Self-health quantification *block*Ring™ ([SHQB][2]) is providing you 
+### Self-health quantification *block*Ring™ ([SHQB]) is providing you 
 
 #### Personal health record
 
-The [SHQB][2] provides a consistent, private, reliable location for your data
+The [SHQB] provides a consistent, private, reliable location for your data
 you can access easily using a variety of applications. Information will
 never be too old or impossible to access and it stays with you for life.
 
@@ -70,11 +75,11 @@ See more : [poster](poster2.htm) ([pdf])
 
 ### Conclusion
 
-The [SHQB][2] integrates fundamental blockchain concepts with decentralization,
+The [SHQB] integrates fundamental blockchain concepts with decentralization,
 asymmetric cryptography and [de-identification][6] to create an [easy to understand][7]
 technology.
 
-The [SHQB][2] holds the potential to improve access to and
+The [SHQB] holds the potential to improve access to and
 quality of research data collection, as well as, medical, nutrition and
 lifestyle care,
 
@@ -83,14 +88,19 @@ the development of individualized care, with a secure permanent data
 record available across organizations and borders while mitigating the
 risk of breaches.
 
+[1]: {{site.search}}=!g+Michel+G.+Combes
+[2]: {{site.search}}=!g+Colleen+Fogarty+Draper
+
 [pdf]: https://ipns.co/QmXDSXrM1oW9JFmJKh1fQTC9rFruRUZt865PzuNu7DiD6o/SHQB_poster_final.pdf
 [jpg]: https://cdn.statically.io/img/shqb.ml/assets/poster2.jpg
-[1]: {{DUCK}}=!g+blockchain+wikipedia
-[2]: {{DUCK}}=!g+%23SHQB+Self+Health+Quantification+Blockchain
-[3]: {{DUCK}}=!g+%22BlockRing™%22
-[4]: {{DUCK}}=!g+%22Global+EHR+system%22+%23GEHR
-[5]: {{DUCK}}=!g+one-time-identity+site:ydentity.ml
-[6]: {{DUCK}}=!g+de-identification+%22blockRing™%22
-[7]: {{DUCK}}=!g+easy-understand+%22blockRing™%22+technology
+
+[bc]: {{site.search}}=!g+blockchain+wikipedia
+[SHQB]: {{site.search}}=!g+%23SHQB+Self+Health+Quantification+Blockchain
+
+[3]: {{site.search}}=!g+%22BlockRing™%22
+[4]: {{site.search}}=!g+%22Global+EHR+system%22+%23GEHR
+[5]: {{site.search}}=!g+one-time-identity+site:ydentity.ml
+[6]: {{site.search}}=!g+de-identification+%22blockRing™%22
+[7]: {{site.search}}=!g+easy-understand+%22blockRing™%22+technology
 
 {% include sig.html %}

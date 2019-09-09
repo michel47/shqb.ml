@@ -1,5 +1,5 @@
 ---
-title: Index page
+title: SHQ*B* Orientation page
 # vim: nospell
 layout: default
 ---
@@ -11,7 +11,7 @@ layout: default
 This is a simple index markup file I use for this webpage
 is has a few links to :
 
--  my [hCard](hCard)[*]
+-  my [hCard](hCard/hCard.htm)[*]
 -  a [README](README.html) file,
 -  a [frama](frama.htm) page and
 -  a [landing](landing.htm) one.
