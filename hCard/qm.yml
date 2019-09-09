@@ -1,7 +1,16 @@
 --- # vCard on the blockRing™
 sb: hcard
-mt: /ipns/QmeZroR1EA7YUy137y4Egxj6CGTC9FiZPnDpAVpNBsRakv
+mt:
+ - /ipns/QmeZroR1EA7YUy137y4Egxj6CGTC9FiZPnDpAVpNBsRakv
+ - /ipns/QmSTCJaTckTwRyELQu8tF3FApPbjMzEYwew9G1Cgdeq9c6
 qm:
  - z6cYNbecZSFzLjbSimKuibtdpGt7DAUMMt46aKQNdwfs
  - z8bvj2CfrwRQWvvzKZBasaJ4w5D273z6v
  - z8bvj1x2fEtuoWtdt5iMgDC8adFFFFSMf
+ - z8bvj1NJgDqCxZkrFYksaHnnhTv2LHqjU
+ - z8bvj2B2rDnY2WpuCmmabv18cTY11kBao
+ - z8bvj1McCgvCm8L3hTWWvWgHvinCAJ4NK
+ - z8bvizqpwwTrXkqYFhR7ytX6RFiTqzaa2
+ - z8bviyZDsktmXNXWYawphW8ZGvgmRmAPZ
+ - z8bvj1rTfCUogr3xYByQGrickJLEbQRBp
+ - z8bviyuYcrHQmanaaqBMqyEMthvZyP9XU
