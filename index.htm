@@ -1,0 +1,30 @@
+---
+layout: home
+title: Self Quantification BlockChain
+---
+
+<!meta http-equiv="refresh" content="300;URL=home.htm"/>
+
+<div class="conten first">
+We believe in the wisdom gained with sharing our health data,
+still remaining secure and preserving everyone privacy.
+</div><br><div class=content>
+{% capture orient %}
+{% include orient.md %}
+{% endcapture %}
+{{ orient | markdownify }}
+</div>
+<br><div class=content>
+{% capture bchain %}
+{% include bchain.md %}
+{% endcapture %}
+{{ bchain | markdownify }}
+</div>
+<br><div class=content>
+{% capture misc %}
+{% include misc.md %}
+{% endcapture %}
+{{ misc | markdownify }}
+</div>
+
+{% include sig.html %}

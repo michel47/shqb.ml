@@ -10,6 +10,15 @@ you probably arrived here with this QRcode :
 
 Thank you for visiting the blockRing page for [Self Health Quantification][1]
 
+My contact information : 
+
+ * email: [m.combes@gc-bank.org](mailto:m.combes@gc-bank.org)
+ * phone: [+41 76 689 4880](callto:+41766894880)
+
+ * vCard: [michel.vcf](hCard/vCard.vcf)
+
+[![img](hCard/QRcard.png)](hCard/hCard.htm)
+
 <!-- </div><br><div class="content"> -->
 
 
