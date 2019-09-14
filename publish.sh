@@ -40,24 +40,39 @@ pgw: https://gateway.ipfs.io
 EOF
 ver=$scheduled
 
-bundle exec jekyll build 1>/dev/null
+bundle exec jekyll build 1>/dev/null # redo jekyll with ipfs files!
 git add _data/ipfs.yml links.md
 msg="publishing on $date $version"
+git config user.name "$fullname"
+git config user.email "$user@$domain"
 if git commit -m "$ver: $msg"; then
 gitid=$(git rev-parse HEAD)
 git tag -f -a $ver -m "tagging $gitid on $date"
-echo $tic: $gitid >> _data/revs.log
-date=$(date +%D);
 tic=$(date +%s)
+cat <<EOT | ed _data/revs.log
+/tic: /c
+tic: $tic
+.
+/ver: /c
+ver: $rel
+.
+/gitid: /c
+gitid: $gitid
+.
+wq
+EOT
+echo $tic: $gitid >> _data/revs.log
+time=$(date +%T)
+date=$(date +%D);
 cat <<EOF > _data/VERSION.yml
 --- # (previous) site VERSION
 date: $date
-tic: $tic
+time: $time
 version: $version
 gitid: $gitid
 rel: $ver
 EOF
-bundle exec jekyll build 1>/dev/null
+bundle exec jekyll build 1>/dev/null # redo jekyll w/ version files
 
 # test if tag $ver exist ...
 if git ls-remote --tags | grep "$ver"; then

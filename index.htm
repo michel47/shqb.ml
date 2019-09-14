@@ -6,8 +6,8 @@ title: Self Quantification BlockChain
 <!meta http-equiv="refresh" content="300;URL=SHQB.htm"/>
 
 <div class="content first">
-<h1 style="text-align:center">We believe in wisdom gained with sharing our health data.<br>
-We developed the technology to keep it secures and private.</h1>
+<h1 style="text-align:center;" ><img src=assets/favicon.png height=120 align=left>{{page.title}}</h1><h2><i>We believe in wisdom gained with sharing our health data.<br>
+We developed the technology to keep it secures and private.</i></h2>
 </div><br><div class=content>
 {% capture orient %}
 {% include orient.md %}
@@ -38,5 +38,38 @@ We developed the technology to keep it secures and private.</h1>
 {% endcapture %}
 {{ contact | markdownify }}
 </div>
+<br><div class=content>
+<img src="{{site.data.name.robot}}" alt="bot" title="{{site.data.name.fullname}}" align=right>
+{% capture git %}
+This website is *checked-[in]* in a [*GIT*]({{site.search}}=!g+GIT) [repository] by the \*bot: [{{site.data.name.fullname}}][botmail].
+<br>If we consider [SHA1] is still a [safe]({{site.search}}=!g+is+SHA1+safe+for+GIT) hash,
+then we can say this page is on a "[git *block*chain](https://github.com/michel47/shqb.ml/deployments)",
+the consensus is that the [HEAD] of the chain
+is [//michel47.github.io/shqb.ml][HEAD] (resolved with DNS);
+it is replicated on [netlify]
+the mutable is the [version tag][tags] "[**{{site.data.VERSION.rel}}**]({{site.search}}=!g+{{site.domain}}+{{site.data.VERSION.version}})";
+and the previous block on the chain is the immutable :<br>*git*:[{{site.data.VERSION.gitid}}](https://github.com/michel47/shqb.ml/tree/{{site.data.VERSION.gitid}}),
+which is visible on the [IPFS] network at *permalink*:<br>[/ipfs/{{site.data.ipfs.wr58}}/{{site.domain}}](http://{{site.data.ipfs.www}}.cf-ipfs.com/{{site.domain}}/).
+
+[in]: https://github.com/michel47/shqb.ml/commit/HEAD
+[tags]: https://github.com/michel47/shqb.ml/tags
+[botmail]: mailto:{{site.data.name.user}}@{{site.domain}}
+[netlify]: https://{{site.netname}}.netlify.com
+[repository]: https://github.com/michel47/{{site.domain}}
+[SHA1]: {{site.search}}=SHA1+cryptographic+hash
+[HEAD]: https://michel47.github.io/shqb.ml
+[IPFS]: {{site.search}}=+!g+IPFS+network+%22blockRing™%22
+
+>> {{site.data.VERSION}}
+
+previous revisions : [revs.log](https://cdn.jsdelivr.net/gh/michel47/shqb.ml@{{site.data.VERSION.rel}}/_data/revs.log)
+
+<br>[![version](https://img.shields.io/badge/rel-{{site.data.VERSION.version | replace: '-', '_' }}-darkgreen.svg?style=flat-square)](https://cdn.jsdelivr.net/gh/michel47/shqb.ml@{{site.data.VERSION.rel}}/)
+
+{% endcapture %}
+{{ git | markdownify }}
+</div>
 
 {% include sig.html %}
+
+<pre style="overflow:auto"><code>{{site.data.name}},{{site.data.ipfs}}</code></pre>

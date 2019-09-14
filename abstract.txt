@@ -1,8 +1,8 @@
 ---
-title: self-health quantification block*chain
+title: self-health quantification block*chain {{site.data.VERSION.rel}}
 ---
 
-### What does the self-health quantification blockchain (SHQB) do for you?
+### What does the self-health quantification blockchain (SHQB {{site.data.VERSION.rel}}) do for you?
 
 #### Personal health record
 
@@ -79,4 +79,4 @@ the development of individualized care, with a secure permanent data
 record available across organizations and borders while mitigating the
 risk of breaches.
 
-{% include sig.html %}
+{% include sig.txt %}

@@ -2,17 +2,18 @@
 # vim: nospell
 port: 4000
 output: _dist
-title: Mini Jekyll
-description: The smallest Jekyll website !
+title: Self.Health.Quant
+description: A blockchain for your self health Quantification
+domain: shqb.ml
 email: michelc@gc-bank.org
 baseurl: ""
 url: "//jekyll.tk" # the base hostname & protocol for your site
-url: "https://michel47.github.io"
+url: "https://michel47.github.io/shqb.ml/"
 netname: modest-pare-29d464
 url: "https://modest-pare-29d464.netlify.net"
 search: "https://duckduckgo.com/?q"
 googledocid: 1VfERUZ8oTEGlCT3Xn37yK1TOsYxFZuJryNNR7bhJdUM
-framaid: mini_jekyll
+framaid: shqb
 gtag: UA-146588632-1
 
 exclude:
