@@ -1,5 +1,5 @@
 ---
-qm: z8bviyuYcrHQmanaaqBMqyEMthvZyP9XU
+qm: z8bvizhQ2dRGy4gJD8F2jtSXibAAuzo4Z
 chart: "https://chart.googleapis.com/chart?cht=qr&choe=UTF-8&chld=L&chs=210&chl="
 ---
 Michel's page [hCard](http://127.0.0.1:8080/ipns/{{site.data.hcard.mkey}})

@@ -2,7 +2,7 @@
 title: Self Health Quantification *block*Ring™ 
 ---
 
-M. Combes PhD<sup>[1]</sup> and C.F. Draper MS RD PhD<sup>[2]</sup>
+Michel Combes PhD<sup>[1]</sup> and Colleen Fogarty Draper MS RD PhD<sup>[2]</sup>
 <br>[1] Blockchain consultant and CEO GC-Bank, Switzerland
 <br>[2] Research Consultant, Personal projects, Switzerland
 <br>[m.combes@gc-bank.org](mailto:m.combes@gc-bank.org)

@@ -4,7 +4,7 @@ set -e
 
 domain=shqb.ml
 find . -name "*.org" -type f -delete
-jekyll build
+bundle exec jekyll build
 echo .
 qm=$(ipfs add -Q -r _site --cid-version=0 --cid-base=base58btc)
 bafy=$(ipfs cid base32 $qm)
@@ -21,8 +21,10 @@ echo url: https://cloudflate-ipfs.com/ipfs/$webroot/$domain
 
 date=$(date +%D);
 gitid=$(git rev-parse --short HEAD)
-eval $(echo $qm | $HOME/bin/name | tee _data/name.yml | eyml)
-eval $($HOME/bin/version _site/index.html | eyml)
+eval $($HOME/bin/name $qm | tee _data/name.yml | eyml)
+echo "qm: $qm" >> _data/name.yml
+
+eval $($HOME/bin/version _site/index.htm | eyml)
 cat <<EOF > _data/ipfs.yml
 --- # YAML data for $domain on IPFS
 release: $scheduled
@@ -38,7 +40,7 @@ pgw: https://gateway.ipfs.io
 EOF
 ver=$scheduled
 
-jekyll build 1>/dev/null
+bundle exec jekyll build 1>/dev/null
 git add _data/ipfs.yml links.md
 msg="publishing on $date $version"
 if git commit -m "$ver: $msg"; then
@@ -55,7 +57,7 @@ version: $version
 gitid: $gitid
 rel: $ver
 EOF
-jekyll build 1>/dev/null
+bundle exec jekyll build 1>/dev/null
 
 # test if tag $ver exist ...
 if git ls-remote --tags | grep "$ver"; then

@@ -3,11 +3,11 @@ layout: home
 title: Self Quantification BlockChain
 ---
 
-<!meta http-equiv="refresh" content="300;URL=home.htm"/>
+<!meta http-equiv="refresh" content="300;URL=SHQB.htm"/>
 
-<div class="conten first">
-We believe in the wisdom gained with sharing our health data,
-still remaining secure and preserving everyone privacy.
+<div class="content first">
+<h1 style="text-align:center">We believe in wisdom gained with sharing our health data.<br>
+We developed the technology to keep it secures and private.</h1>
 </div><br><div class=content>
 {% capture orient %}
 {% include orient.md %}
@@ -15,8 +15,14 @@ still remaining secure and preserving everyone privacy.
 {{ orient | markdownify }}
 </div>
 <br><div class=content>
+{% capture pblem %}
+{% include pblem.md %}
+{% endcapture %}
+{{ pblem | markdownify }}
+</div>
+<br><div class=content>
 {% capture bchain %}
-{% include bchain.md %}
+{% include blockchain.md %}
 {% endcapture %}
 {{ bchain | markdownify }}
 </div>
@@ -25,6 +31,12 @@ still remaining secure and preserving everyone privacy.
 {% include misc.md %}
 {% endcapture %}
 {{ misc | markdownify }}
+</div>
+<br><div class=content>
+{% capture contact %}
+{% include contact.md %}
+{% endcapture %}
+{{ contact | markdownify }}
 </div>
 
 {% include sig.html %}

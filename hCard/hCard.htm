@@ -1,6 +1,5 @@
 ---
-qm: z8bviyuYcrHQmanaaqBMqyEMthvZyP9XU
-layout: default
+qm: z8bvizhQ2dRGy4gJD8F2jtSXibAAuzo4Z
 ---
 <!DOCTYPE html>
 <title>Michel G. Combes' hCard</title>
@@ -18,7 +17,9 @@ END:VCARD
 cat vCard.vcf | qrencode -l L -s 5 -o QRcard.png; eog QRcard.png
 zbarimg QRcard.png
 -->
-
+<div class="content first">
+<h2>Below is my hCard (html business card)</h2>
+</div><div class="content">
 <div id='hcard_embed'>
 <div id="hcard-Michel-Combes-GC-Bank" class="vcard">
 <div class="fn n">
@@ -26,19 +27,33 @@ zbarimg QRcard.png
 <span class="given-name">Michel</span>
 <span class="additional-name">G.</span>
 <span class="family-name">Combes</span></div>
-<div class="org">blockchain consultant & CEO GC-Bank</div><div class="website"><a class="website" href="https://gc-bank.org">https://gc-bank.org</a></div>
+<div class="org">blockchain consultant & CEO <a href=https://duckduckgo.com/?q=!g+GC-bank>GC-Bank</a></div><div class="website"><a class="website" href="https://gc-bank.org">https://gc-bank.org</a></div>
 <div class="spacer"></div>
 <div class="email" ><a class="email" href="mailto:michel@gc-bank.org">michel@gc-bank.org</a></div>
 <div class="tel"><span class="type">Voice: </span>+41 76 689 4880</div>
 <div class="spacer"></div>
 </div><!--hCard created @  bVcard.com-->
+<!--CLIP HERE to remove  bVcard.com link from hCard-->
+<div class='bvcardlink'><a href='http:// bVcard.com' target='_BLANK'>Generate your own vCard.</a></div>
+</div>
+
+<div id=QRcard>
+<a href=vCard.vcf><img src=QRcard.png></a>
+</div>
+</div>
+<br>--&nbsp;<br>
+This page is on the <a href=http://duckduckgo.com/?q=hCard+%22blockRing™%22>blockRing™</a> at:
+<br><a href="https://ipfs.blockringtm.ml/ipns/{{site.data.hcard.mkey}}">http://ipns.co/ipns/{{site.data.hcard.mkey}}</a>
+and the previous one is at
+<br><a href="https://gateway.ipfs.io/ipfs/{{ page.qm }}/hCard.htm">http://ipns.co/{{ page.qm }}/hCard.htm</a>
+
 <style type='text/css'>
-#hcard_embed{max-width: 270px;}
+#hcard_embed, #QRcard{max-width: 320px; padding: 45px;}
 div.vcard {
   background-color: rgb(0, 75, 112);
   border-radius: 10px 10px 10px 10px;
   color: white; padding: 10px 10px;
-  width: 270px; line-height: 1.2em;
+  width: 320px; line-height: 1.2em;
 }
 div.vcard a{ color: white; text-decoration: none; }
 div.vcard a:hover{ color: lightpink; }
@@ -46,18 +61,37 @@ div.vcard a:active{ text-decoration: underline; }
 
 div.vcard div.fn{ font-weight: bold; border-bottom: 1px solid white; }
 div.vcard div.spacer{ min-height: 0.5em; }
-.bvcardlink a{ line-height: 16px; color: darkgrey; font-size: 10px;
+.bvcardlink a{ line-height: 16px; color: #444; font-size: 10px;
   float: right; padding-right: 20px;
   background: url('http://bvcard.com/sites/all/modules/bvcard_form/bvcard-fav.png') no-repeat top right;
   background-size:16px 16px;
 }
-</style>
-<!--CLIP HERE to remove  bVcard.com link from hCard-->
-<div class='bvcardlink'><a href='http:// bVcard.com' target='_BLANK'>Generate your own vCard.</a></div>
-</div>
+body {
+  background: url('https://cdn.statically.io/img/cloudflare-ipfs.com/ipfs/uAXAALBImChgBcBEUvVrutqf0xvW1ryROwJuUE-wW-DkSBmJnLmpwZxiBrAsKAggB/bg.jpg');
+  color: white;
+  background-size: cover;
+}
+body a{ color: #aaa; text-decoration: none; }
+body a:hover{ color: lightpink; }
+body a:active{ text-decoration: underline; }
+.first {
+  color: white !important;
+  background-color: rgba(25,1,3,0.6) !important;
+  opacity: 1.0;
+}
+.content {
+  color: black;
+  max-width:58%;
+  padding: 32px;
+  background-image: linear-gradient(to bottom right, white, lightblue, cyan);
+  margin: auto;
 
-<a href=vCard.vcf><img src=QRcard.png></a>
-<br>--&nbsp;<br>
-This page is on the <a href=http://duckduckgo.com/?q=hCard+%22blockRing™%22>blockRing™</a> at:
-<a href="https://ipfs.blockringtm.ml/ipns/{{site.data.hcard.mkey}}">http://ipns.co/ipns/{{site.data.hcard.mkey}}</a>
-and the previous one is at <a href="https://gateway.ipfs.io/ipfs/{{ page.qm }}/hCard.htm">http://ipns.co/{{ page.qm }}/hCard.htm</a>
+}
+.first {
+  background-image: none;
+  position: sticky;
+  top: 3px;
+  z-index: -1;
+
+}
+</style>

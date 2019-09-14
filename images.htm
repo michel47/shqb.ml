@@ -1,0 +1,50 @@
+<meta charset="utf8"/>
+
+<img src=http://127.0.0.1:8080/ipfs/uAXAAKxIlChgBcBEUSNvNYvwGRuc7_oPOUyZ915yDWkkSBWcuanBnGO2CCAoCCAE/g.jpg>
+<img src=http://127.0.0.1:8080/ipfs/uAXAALBImChgBcBEUvVrutqf0xvW1ryROwJuUE-wW-DkSBmJnLmpwZxiBrAsKAggB/bg.jpg>
+<img src=http://127.0.0.1:8080/ipfs/uAXAALhIoChgBcBEUlJjUlinaK3gBzSZolk-zrXbmsKESCGlwZnMucG5nGPv3BwoCCAE/ipfs.png>
+<img src=http://127.0.0.1:8080/ipfs/QmZwAwrrMcDQGh91fBGjKvy8Wbi3kKst6qfDPTxSp4pZQV/pad.jpg>
+<img src=http://127.0.0.1:8080/ipfs/QmdVersTnjhgiJic2RrV4kGxs4Why67itS8iMTayMoaYgF/nugo-ecn.jpg>
+<img src=http://127.0.0.1:8080/ipfs/QmcEtgpqgMovsnLVz1nDMnQ4pSqo2UfKuCYo3yDP5h4Yfo/ipfs-note.jpg>
+
+<!--
+ Resource owner
+ Auth Server
+ Resource Server
+ Auth Grant
+ Callback, Redirect URI
+ Access token
+
+ scope
+ back channel
+ front channel
+-->
+
+
+<style>
+img {
+  background: url(https://cdn.statically.io/img/cloudflare-ipfs.com/ipfs/uAXAALhIoChgBcBEUlJjUlinaK3gBzSZolk-zrXbmsKESCGlwZnMucG5nGPv3BwoCCAE/ipfs.png);
+  background: url(http://127.0.0.1:8080/ipfs/QmcEtgpqgMovsnLVz1nDMnQ4pSqo2UfKuCYo3yDP5h4Yfo/ipfs-note.jpg);
+  width: 32%;
+}
+</style>
+
+<script>
+ const static='https://cdn.statically.io/img/';
+ const cf='cloudflare-ipfs.com';
+ //const gw='https://'+cf;
+ const gw='http://127.0.0.1:8080'
+
+ setTimeout(function() {
+ elems = document.getElementsByTagName('img');
+ for (let i=0; i<elems.length; i++) {
+   url= elems[i].src;
+   if (url.match(/ipfs/) ) {
+     ipath = url.replace('http://127.0.0.1:8080','');
+     console.log('ipath: '+ipath);
+     elems[i].src = static+cf+ipath;
+     elems[i].style.background-image = 'url('+gw+ipath+')';
+   }
+ }
+ }, 250);
+</script>
