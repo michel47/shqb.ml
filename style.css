@@ -21,14 +21,15 @@ iframe { width:106vh; height:60vh; display: block; margin:auto; }
 div img .center { max-width: 95%; max-height: 720px; } 
 img[alt=poster2] { display:block; }
 
-a:link { color: grey; }
-a:hover { color: hotpink; }
-a:visited { color: #26B; }
-a:active { color: blue; }
+a:link { color: #26B; text-decoration: underline; text-decoration-style: dashed;}
+a:hover { color: hotpink; text-decoration-style: solid;}
+a:visited { color: #234; }
+a:active { color: blue; text-decoration-style: wavy;}
 
 div {
  background-image: linear-gradient(to bottom left, white,royalblue);
  color: black;
+ border: 1px solid;
  /*
  opacity: 0.46;
  background: orange;
@@ -39,9 +40,61 @@ div {
  padding: 2em;
  font-size: 16px;
  text-align: justify;
+
+ border-radius: 4px;
+ box-shadow: none;
 }
 
+.blog-post-small {
+ border-radius: 0px;
+ background-image: linear-gradient(to bottom right, white,darkgrey) !important;
+}
+.highlight {
+ background-image: none;
+ background-color: darkgrey;
+ border: none;
+}
+.highlighter-rouge {
+ border: 1px dashed red;
+ background: orange;
+ padding: 2px;
+}
+/**
+ * Posts
+ */
+.post-header {
+  margin-bottom: 30px; }
+
+.post-title {
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 1; }
+  @media screen and (max-width: 800px) {
+    .post-title {
+      font-size: 36px; } }
+
+.post-content {
+  margin-bottom: 30px; }
+  .post-content h2 {
+    font-size: 32px; }
+    @media screen and (max-width: 800px) {
+      .post-content h2 {
+        font-size: 28px; } }
+  .post-content h3 {
+    font-size: 26px; }
+    @media screen and (max-width: 800px) {
+      .post-content h3 {
+        font-size: 22px; } }
+  .post-content h4 {
+    font-size: 20px; }
+    @media screen and (max-width: 800px) {
+      .post-content h4 {
+        font-size: 18px; } }
+
+
 #first, div.first { color: white !important; }
+.first > h1 { color: #98EDFE; }
+
 
 div.content {
  opacity: 0.96;
@@ -61,22 +114,19 @@ div.content {
 }
 
 
-h1 { color: #98EDFE; }
-pre { overflow: auto }
+pre { overflow: auto; }
 
 
 .first {
  opacity: 0.46;
+ background-color: rgba(20,20,40,0.8) !important;
  position: sticky !important;
  margin-top: 108px;
  margin-bottom: 1px;
  /* right: 50%; margin-right: -382px; */
-
  /*
  z-index: -10;
  bottom: -200px;
- background: lightpink;
- background: rgb(220,200,240);
  */
 }
 

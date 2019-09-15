@@ -5,6 +5,9 @@ output: _dist
 title: Self.Health.Quant
 description: A blockchain for your self health Quantification
 domain: shqb.ml
+date: 2019-09-15 12:29:09 CEST
+name: SHQB
+author: "Michel G. Combes"
 email: michelc@gc-bank.org
 baseurl: ""
 url: "//jekyll.tk" # the base hostname & protocol for your site

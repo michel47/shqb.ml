@@ -1,5 +1,6 @@
 ---
 framaid: my-shared-framapad
+jsrelease: 19f340a
 ---
 <!DOCTYPE html><html><head>
 <meta http-equiv="Access-Control-Allow-Origin" content="{{ site.url}}"/>
@@ -35,13 +36,22 @@ this web page.
 
 <br>source: <a href="#" class=include>file</a>.
  made w/ <a href="{{ framaid }}" target=_blank class=frama>♡</a>.
+
+<!-- ------------------------------------------------------------ -->
+{% if jekyll.environment != 'production' %}
+<script> console.log('/!\\ NOT Production: {{jekyll.environment}}')</script>
+<script src=http://ocean:8088/js/inc-fp.js></script>
+{% else %}
+<script> console.log('// Jekyll Environment: {{jekyll.environment}}')</script>
 <!--
-<script src=http://iphs.ga/js/inc-fp.js></script>
-<script src=https://cdn.jsdelivr.net/gh/iglake/js@master/dist/inc-fp.js></script>
-<script src=http://ocean.local:8088/GITrepo/iglake/cssjs/js/dist/inc-fp.js></script>
-<script src=https://cdn.jsdelivr.net/gh/iglake/js@master/dist/inc-fp.js></script>
-<script src=http://127.0.0.1:8088/js/inc-fp.js></script>
+src=http://127.0.0.1:8088/js/inc-fp.js
+src=http://iphs.ga/js/inc-fp.js
+src=http://ocean.local:8088/GITrepo/iglake/cssjs/js/dist/inc-fp.js
+src=https://cdn.jsdelivr.net/gh/iglake/js@master/dist/inc-fp.js
+src=https://cdn.jsdelivr.net/gh/iglake/js@19f340a/dist/inc-fp.js
 -->
-<script src=https://cdn.jsdelivr.net/gh/iglake/js@19f340a/dist/inc-fp.js></script>
-
-
+<script
+src=https://cdn.jsdelivr.net/gh/iglake/js@{{page.jsrelease}}/dist/inc-fp.js
+></script>
+{% endif %}
+<!-- ------------------------------------------------------------ -->

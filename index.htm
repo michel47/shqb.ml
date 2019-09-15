@@ -9,10 +9,19 @@ title: Self Quantification BlockChain
 <h1 style="text-align:center;" ><img src=assets/favicon.png height=120 align=left>{{page.title}}</h1><h2><i>We believe in wisdom gained with sharing our health data.<br>
 We developed the technology to keep it secures and private.</i></h2>
 </div><br><div class=content>
-{% capture orient %}
-{% include orient.md %}
+{% capture TLDR %} <!-- Too long; didn't read -->
+### Summary (TL;DR)
+
+Self Health Quantification BlockChain is a distributed Personal Health Record (PHR)
+which private and secured with the help of [blockRing™](bring) technology.
+
 {% endcapture %}
-{{ orient | markdownify }}
+{{ TLDR | markdownify }}
+</div><br><div class=content>
+{% capture intro %}
+{% include intro.md %}
+{% endcapture %}
+{{ intro | markdownify }}
 </div>
 <br><div class=content>
 {% capture pblem %}
@@ -27,16 +36,48 @@ We developed the technology to keep it secures and private.</i></h2>
 {{ bchain | markdownify }}
 </div>
 <br><div class=content>
-{% capture misc %}
-{% include misc.md %}
-{% endcapture %}
-{{ misc | markdownify }}
-</div>
-<br><div class=content>
 {% capture contact %}
 {% include contact.md %}
 {% endcapture %}
 {{ contact | markdownify }}
+</div>
+
+<br><div class=content>
+<h3>Posts:</h3>
+<ul>
+{% for post in site.posts limit:4 %}
+  <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+{% endfor %}
+</ul>
+</div>
+<!-- Blog Post Links -->
+<br><div class="content blog-post-small">
+{% for post in site.posts %}
+   <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+   <p><i class="fa fa-calendar"></i> &nbsp;{{ post.date | date: "%b %-d, %Y" }} | {% if site.disqus_short_name and page.comments != false and site.disqus_show_comment_count == true %}
+   <a href="{% if page.index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread">Comments</a>
+   {% endif %}</p>
+   {% if post.content contains '<!-- more -->' %}
+   <p>{{ post.content | split:'<!-- more -->' | first }}
+   <br><br>
+   <a href="{{ post.url }}"class="btn btn-primary btn-sm">Read More</a>
+   </p>
+   {% else %}
+   {{ post.content }}
+   {% endif %}
+{% endfor %}
+</div>
+<!-- End Blog Post Links -->
+
+
+
+
+
+<br><div class=content>
+{% capture misc %}
+{% include misc.md %}
+{% endcapture %}
+{{ misc | markdownify }}
 </div>
 <br><div class=content>
 <img src="{{site.data.name.robot}}" alt="bot" title="{{site.data.name.fullname}}" align=right>

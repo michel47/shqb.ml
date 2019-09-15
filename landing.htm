@@ -16,16 +16,22 @@ jsrelease: 19f340a
 </div>
 <br>source <a href="https://docs.google.com/document/export?id={{ page.googledocid }}&format=txt">file</a>
 made w/ <a href="https://docs.google.com/document/d/{{ page.googledocid }}/edit" target=_blank class=gdoc>♡</a>.
+<!-- ------------------------------------------------------------ -->
+{% if jekyll.environment != 'production' %}
+<script> console.log('/!\\ NOT Production: {{jekyll.environment}}')</script>
+<script src=http://ocean:8088/js/inc-gd.js></script>
+{% else %}
+<script> console.log('// Jekyll Environment: {{jekyll.environment}}')</script>
 <!--
-<script src=https://cdn.jsdelivr.net/gh/iglake/js@master/dist/inc-gd.js></script>
-<script src=http://iphs.ga/js/inc-gd.js></script>
-<script src=https://cdn.jsdelivr.net/gh/iglake/js@master/dist/inc-gd.js></script>
-src=https://cdn.jsdelivr.net/gh/iglake/js@{{page.jsrelease}}/dist/inc-gd.js
+src=http://127.0.0.1:8088/js/inc-gd.js
+src=https://cdn.jsdelivr.net/gh/iglake/js@master/dist/inc-gd.js
+src=http://iphs.ga/js/inc-gd.js
 -->
 <script
-src=http://127.0.0.1:8088/js/inc-gd.js
+src=https://cdn.jsdelivr.net/gh/iglake/js@{{page.jsrelease}}/dist/inc-gd.js
 ></script>
-
+{% endif %}
+<!-- ------------------------------------------------------------ -->
 <div class="content" style="margin-top: 108px;">
 <h3>web-rings: <input type=button value="list" name=list Onclick="toggle('list')"/></h3>
 <div id=list style="display:none">

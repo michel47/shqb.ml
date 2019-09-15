@@ -18,13 +18,20 @@ To be rendered !
 </div><!-- --------------------------------------------- -->
 <br>source <a href="#" class=include>file</a> made w/ <a href="#" target=_blank class=source>♡</a>.
 </div><!-- --------------------------------------------- -->
+{% if jekyll.environment != 'production' %}
+<script> console.log('/!\\ NOT Production: {{jekyll.environment}}')</script>
+<script src=http://ocean:8088/js/showdown.min.js></script>
+<script src=http://ocean:8088/js/inc-md.js></script>
+{% else %}
+<script> console.log('// Jekyll Environment: {{jekyll.environment}}')</script>
 <!--
 <script src=http://iphs.ga/js/inc-md.js></script>
-<script src=http://0.0.0.0:8088/js/inc-md.js></script>
 <script src=https://cdn.jsdelivr.net/gh/iglake/js@master/dist/inc-md.js></script>
 -->
 <script src=https://cdn.jsdelivr.net/npm/showdown@latest/dist/showdown.js></script>
 <script src=https://cdn.jsdelivr.net/gh/iglake/js@master/dist/inc-md.js></script>
+{% endif %}
+
 
 <div class="content" style="margin-top: 83px;">
 <h3>contact: <a href=mailto:m.combes%40gc-bank.org>m.combes&#64;gc-bank.org</a>

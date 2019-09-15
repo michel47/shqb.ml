@@ -44,7 +44,7 @@ img {
  for (let i=0; i<elems.length; i++) {
    url= elems[i].src;
    if (url.match(/ipfs/) ) {
-     ipath = url.replace('.*//[^/]+/ipfs','/ipfs');
+     ipath = url.replace(RegExp('.*//[^/]+/ipfs'),'/ipfs');
      console.log('ipath: '+ipath);
      elems[i].src = gw+ipath;
      elems[i].style.background-image = 'url('+cdn+cf+ipath+')';

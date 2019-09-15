@@ -66,9 +66,9 @@ time=$(date +%T)
 date=$(date +%D);
 cat <<EOF > _data/VERSION.yml
 --- # (previous) site VERSION
-date: $date
-time: $time
-version: $version
+date: "$date"
+time: "$time"
+version: "$version"
 gitid: $gitid
 rel: $ver
 EOF
