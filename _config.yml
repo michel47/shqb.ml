@@ -5,7 +5,9 @@ output: _dist
 title: Self.Health.Quant
 description: A blockchain for your self health Quantification
 domain: shqb.ml
-date: 2019-09-15 12:39:08 CEST
+date: 2019-09-24 18:04:23 CEST
+creation: 2019-09-15 12:39:08 CEST
+update: 2019-09-15 12:39:08 CEST
 name: SHQB
 author: "Michel G. Combes"
 email: michelc@gc-bank.org

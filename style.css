@@ -9,7 +9,9 @@ body {
   background-image:url(https://cdn.statically.io/img/siderus.io/ipfs/uAXAAKxIlChgBcBEUSNvNYvwGRuc7_oPOUyZ915yDWkkSBWcuanBnGO2CCAoCCAE/g.jpg);
   */
   background-image:url(https://cdn.statically.io/img/cloudflare-ipfs.com/ipfs/uAXAANRIvChgBcBEU9NDXg8p6R1G3-0LwcdzYpn71OgsSD1BIUmVjb3JkLWJnLmpwZxj4lCEKAggB/PHRecord-bg.jpg);
-  background-size: cover;
+  background-size: cover 100vh;
+  background-attachment: fixed;
+  background-position: center;
   /* min-height: 100%; */
   color: #546;
 }
