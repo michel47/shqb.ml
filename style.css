@@ -11,8 +11,8 @@ body {
   background-image:url(https://cdn.statically.io/img/ipfs.io/ipfs/QmXMy5G9Stx2PTs9DyBtWVQpwU1mh6G5PkaapRXYQuP6i3);
   */
   background-image:url(img/PHRecord-bg.jpg);
-  background-size: cover 100vh;
   background-attachment: fixed;
+  background-size: cover 100vh;
   background-position: center;
   /* min-height: 100%; */
   color: #546;
@@ -119,9 +119,17 @@ div.content {
  margin-left: 100px;
  max-width: 740px;
 }
+body {
+  background-size: cover;
+  background-position: left top;
 }
-@media screen and (orientation: landscape) {
-}``
+}
+@media screen and (orientation: portrait) {
+body {
+  background-size: cover;
+  background-position: right bottom ;
+}
+}
 
 
 pre { overflow: auto; }
