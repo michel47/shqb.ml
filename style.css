@@ -7,8 +7,10 @@ body {
   background-image:url(https://dweb.link/ipfs/uAXAA/grid.jpg);
   background-image:url(https://cdn.statically.io/img/cloudflare-ipfs.com/ipfs/uAXAALhIoChgBcBEUSNvNYvwGRuc7_oPOUyZ915yDWkkSCGdyaWQuanBnGO2CCAoCCAE/grid.jpg);
   background-image:url(https://cdn.statically.io/img/siderus.io/ipfs/uAXAAKxIlChgBcBEUSNvNYvwGRuc7_oPOUyZ915yDWkkSBWcuanBnGO2CCAoCCAE/g.jpg);
-  */
   background-image:url(https://cdn.statically.io/img/cloudflare-ipfs.com/ipfs/uAXAANRIvChgBcBEU9NDXg8p6R1G3-0LwcdzYpn71OgsSD1BIUmVjb3JkLWJnLmpwZxj4lCEKAggB/PHRecord-bg.jpg);
+  background-image:url(https://cdn.statically.io/img/ipfs.io/ipfs/QmXMy5G9Stx2PTs9DyBtWVQpwU1mh6G5PkaapRXYQuP6i3);
+  */
+  background-image:url(img/PHRecord-bg.jpg);
   background-size: cover 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -103,17 +105,23 @@ div.content {
  color: black; background: lightyellow; opacity: 1.0; 
 
  position: relative;
- max-width: 740px;
- margin-left: 100px;
  margin: auto;
 
 
- width: 100%;
+ width: calc(100% - 2em);
  padding: 1em;
 
   border-radius: 4px;
   box-shadow:2px 20px 10px rgba(0, 0, 0, 0.40);
 }
+@media screen and (orientation: landscape) {
+div.content {
+ margin-left: 100px;
+ max-width: 740px;
+}
+}
+@media screen and (orientation: landscape) {
+}``
 
 
 pre { overflow: auto; }
